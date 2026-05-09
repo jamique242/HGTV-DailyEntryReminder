@@ -54,7 +54,7 @@ cron(0 9 * * ? *)
 ```
 </div>
 
-## 🌐 Frontend Page
+## 🌐 [Frontend Page](https://hgtv-sweepstakeslauncher-jamique.s3.us-east-1.amazonaws.com/index.html)
 The frontend consists of a simple static HTML page hosted via Amazon S3.
 
 ## 🧠 Architect Design Decisions
