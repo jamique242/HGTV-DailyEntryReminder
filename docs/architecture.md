@@ -56,3 +56,16 @@ Amazon SNS was chosen as the notification service due to its native integration 
 The frontend was intentionally kept minimal and hosted statically in Amazon S3 to reduce complexity while still demonstrating lightweight cloud hosting concepts.
 
 Overall, the system was intentionally designed around simplicity, scalability, and low-cost automation principles while remaining easy to understand and reproduce.
+
+# 🔎 Observations & Design Tradeoffs
+## Reminder System vs Automated Entry
+The system was intentionally designed as a reminder workflow rather than a fully automated submission bot. Automating contest entries could violate sweepstakes rules and potentially result in disqualification. The reminder-based approach keeps the user responsible for the final submission action while still reducing the likelihood of missed entries.
+
+## SMS vs Email Notification Tradeoffs
+Amazon SNS supports both SMS and email delivery methods. SMS notifications were initially considered for immediacy and visibility; however, direct SMS delivery introduces additional considerations such as:
+* regional messaging restrictions
+* carrier filtering
+* higher operational costs
+* sandbox/testing limitations
+
+Email notifications were ultimately preferred during initial testing due to simplicity, reliability, and lower cost overhead. So to achieve SMS we did an email to text using carrier emails. This caused delays, but it was acceptable as the core purpose was to setup a daily reminder.
