@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Entry</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+      background: #0f172a;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      width: 90%;
+      max-width: 400px;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      font-size: 24px;
+    }
+
+    .button {
+      display: block;
+      width: 100%;
+      padding: 18px;
+      margin: 12px 0;
+      font-size: 16px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      color: white;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+
+    .button:active {
+      transform: scale(0.97);
+    }
+
+    .hgtv {
+      background: #2563eb;
+    }
+
+    .food {
+      background: #dc2626;
+    }
+
+    .note {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>🎯 Daily Sweepstakes</h1>
+
+    <button class="button hgtv"
+      onclick="window.location.href='https://www.hgtv.com/sweepstakes/hgtv-smart-home/sweepstakes'">
+      🏡 Enter HGTV
+    </button>
+
+    <button class="button food"
+      onclick="window.location.href='https://www.foodnetwork.com/sponsored/sweepstakes/hgtv-smart-home-sweepstakes'">
+      🍔 Enter Food Network
+    </button>
+
+    <div class="note">
+      Tap → Autofill → Submit ✅
+    </div>
+  </div>
+
+</body>
+</html>
