@@ -81,4 +81,10 @@ Amazon SNS supports both SMS and email delivery methods. SMS notifications were 
 * higher operational costs
 * sandbox/testing limitations
 
+## Infrastructure Reproducibility
+
+The infrastructure for this project was configured manually through the AWS Console and was not originally designed as a reusable deployment template. Since the project began as a lightweight personal automation workflow, simplicity and rapid setup were prioritized over full infrastructure reproducibility.
+
+Future enhancements could include migrating the setup into AWS SAM or Terraform templates to support repeatable deployments and environment portability.
+
 Email notifications were ultimately preferred during initial testing due to simplicity, reliability, and lower cost overhead. So to achieve SMS we did an email to text using carrier emails. This caused delays, but it was acceptable as the core purpose was to setup a daily reminder.
